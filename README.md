@@ -1,5 +1,19 @@
-<h3 align="center">A Shitty Self-Bot made in Python</h3>
+## Extra-Selfbot
 
-<h3 align="left">Connect with me:</h3>
-<p align="left">
-</p>
+Download The Libraries:
+```bash
+pip install <Library>
+```
+
+Add your token and prefix:
+
+```json
+{
+    "token": "Token",
+    "prefix": "Your Prefix",
+}
+```
+
+I'm not responsible for any actions taken by the users of Extra.
+
+
