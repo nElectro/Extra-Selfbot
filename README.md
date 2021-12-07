@@ -10,7 +10,7 @@ Add your token and prefix:
 ```json
 {
     "token": "Token",
-    "prefix": "Your Prefix",
+    "prefix": "Your Prefix"
 }
 ```
 
