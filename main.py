@@ -23,10 +23,10 @@ async def on_ready():
 
 @user.command(pass_context=True)
 async def help(ctx):
-    await ctx.send('''Extra Selfbot
+    await ctx.send(f'''Extra Selfbot
     ```Extra Help
-    No Perm: z!help noperm
-    Embed Perms: z!perm
+    No Perm: {prefix}noperm
+    Embed Perms: {prefix}perm
     
 Electro#7777```''')
 
