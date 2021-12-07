@@ -17,6 +17,10 @@ class MassPing(commands.Cog):
     async def masseveryone(self, ctx):
         for i in range(1000):
             await ctx.send("@everyone", delete_after=0.1)        
+            
+    @commands.command(pass_context=True)
+    async def masshere(self, ctx):
+        await ctx.send("@here", delete_after=0.1)
 
 def setup(user):
     user.add_cog(MassPing(user))   
