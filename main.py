@@ -34,22 +34,20 @@ Electro#7777```''')
 @user.command(pass_context=True)
 async def perm(ctx):
     embed=discord.Embed(title="Extra Help", color=0x5cff67)
-    embed.add_field(name="Spam", value="`z!spam <amt> <msg>`", inline=True)
-    embed.add_field(name="Nuke", value="`z!nuke` (Need Perms)", inline=True)
-    embed.add_field(name="MassDM", value="`z!massdm`", inline=True)
-    embed.add_field(name="Meme", value="`z!meme`", inline=True)
-    embed.add_field(name="SetPresence", value="`z!setpresence <name>`", inline=True)    
-    embed.set_footer(text="Buy Extra: tiys.tk/extra | Electro#7777")
+    embed.add_field(name="Spam", value={prefix}"`spam <amt> <msg>`", inline=True)
+    embed.add_field(name="MassDM", value=f"`{prefix}massdm`", inline=True)
+    embed.add_field(name="Meme", value=f"`{prefix}meme`", inline=True)
+    embed.add_field(name="SetPresence", value=f"`{prefix}setpresence <name>`", inline=True)    
+    embed.set_footer(text=f"Made by; Electro#7777")
     await ctx.send(embed=embed)
 
 @user.command(pass_context=True)
 async def noperm(ctx):
-    await ctx.send('''Extra Selfbot
+    await ctx.send(f'''Extra Selfbot
     ```Extra Help
-    Spam: z!spam <amt> <msg>
-    Nuke: z!nuke
-    Mass DM: z!massdm
-    Meme: z!meme
+    Spam: {prefix}spam <amt> <msg>
+    Mass DM:{prefix}massdm
+    Meme:{prefix}meme
     
 Extra On Top```''')
 
