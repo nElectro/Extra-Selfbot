@@ -14,6 +14,6 @@ Add your token and prefix:
 }
 ```
 
-I'm not responsible for any actions taken by the users of Extra.
+if u get banned it's not my fault
 
 
