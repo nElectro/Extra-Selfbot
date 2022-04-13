@@ -20,6 +20,7 @@ class MassPing(commands.Cog):
             
     @commands.command(pass_context=True)
     async def masshere(self, ctx):
+         for i in range(1000):
         await ctx.send("@here", delete_after=0.1)
 
 def setup(user):
